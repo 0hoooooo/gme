@@ -3,36 +3,39 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
 import styled from "styled-components";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <HeaderOuter>
-      <Top>
-        <Container>
-          <Row>
-            <Logo>
-              <LogoA href="https://www.gmeremit.com">
+    <div id="header-outer">
+      <header id="top">
+        <div className="container">
+          <div className="row">
+            <div className="logo">
+              <a id="logo" href="https://www.gmeremit.com">
                 <img
                   className="logo"
                   width={180}
                   height={50}
                   src="https://www.gmeremit.com/wp-content/uploads/2021/07/GME-LOGO-HD.png"
                 />
-              </LogoA>
-            </Logo>
-            <Menu>
-              <WidgetArea></WidgetArea>
-              <MenuNav>
-                <MenuUl>
-                  <MenuLi>
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+              </a>
+            </div>
+            <div className="menu">
+              <div className="widget-area">
+                <div></div>
+              </div>
+              <nav className="menu-nav">
+                <ul className="sf-menu">
+                  <li id="menu-item1">
+                    <a href="https://www.gmeremit.com/" aria-current="page">
                       <span className="menu-title-text">Personal</span>
-                    </MenuA>
-                  </MenuLi>
-                  <MenuLi>
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+                    </a>
+                  </li>
+                  <li id="menu-item2">
+                    <a href="https://www.gmeremit.com/" aria-current="page">
                       <span className="menu-title-text">Business</span>
-                    </MenuA>
+                    </a>
                     <DetailMenuUl>
                       <DetailMenuLi>
                         <DetailMenuA href="https://www.gmeremit.com/business/">
@@ -45,7 +48,7 @@ const Header = () => {
                               <span>
                                 <InnerSpan>B2B</InnerSpan>
                               </span>
-                              <span class="menu-item-desc">
+                              <span className="menu-item-desc">
                                 Reduce Cost on Business Transfers
                               </span>
                             </InnerContent>
@@ -53,15 +56,15 @@ const Header = () => {
                         </DetailMenuA>
                       </DetailMenuLi>
                     </DetailMenuUl>
-                  </MenuLi>
-                  <MenuLi>
+                  </li>
+                  <li id="menu-item3">
                     <MenuA href="https://www.gmeremit.com/" aria-current="page">
                       <span className="menu-title-text">Company</span>
                     </MenuA>
-                  </MenuLi>
-                </MenuUl>
-              </MenuNav>
-            </Menu>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <RightContents>
               <MenuNav>
                 <MenuUl>
@@ -83,10 +86,10 @@ const Header = () => {
                 </MenuUl>
               </MenuNav>
             </RightContents>
-          </Row>
-        </Container>
-      </Top>
-    </HeaderOuter>
+          </div>
+        </div>
+      </header>
+    </div>
   );
 };
 const HeaderOuter = styled.div`
@@ -181,8 +184,11 @@ c
 const MenuLi = styled.li`
   outline: 0 none;
   line-height: 0;
-  font-size: 15px;
+  font-size: 20px;
   align-items: center;
+  display: flex;
+  float: left;
+  list-style: none;
 `;
 
 const DetailMenuUl = styled.ul`

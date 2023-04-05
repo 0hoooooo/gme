@@ -25,7 +25,13 @@ const App = () => {
       {loading ? (
         <Loading />
       ) : (
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+          }}
+        >
           <Header />
           <Body />
         </div>
