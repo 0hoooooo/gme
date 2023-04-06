@@ -68,3 +68,11 @@ h1 {
   font-weight: 600;
   line-height: 1.25 !important;
 }
+h3 {
+  font-family: Poppins;
+  font-weight: 400;
+}
+h5 {
+  font-family: Poppins;
+  font-weight: 600;
+}

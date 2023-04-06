@@ -1,10 +1,20 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import "./Body.css";
 const Body = () => {
+  const [isShow, setIsShow] = useState(false);
+  const [fadeIn, setFadeIn] = useState("");
   const videoRef = useRef(null);
   const handleVideoEnd = () => {
     console.log("video end");
+    if (isShow === false) {
+      console.log(isShow);
+      setFadeIn("fade-In");
+      setTimeout(() => {
+        setIsShow(!isShow);
+      }, 1000);
+    }
+    setIsShow(true);
   };
   return (
     <div className="ajax-content-wrap">
@@ -45,16 +55,17 @@ const Body = () => {
                 <div className="nectar-video-inner">
                   <video
                     className="nectar-video-bg"
-                    width="1300"
-                    height="800"
+                    ref={videoRef}
+                    onEnded={handleVideoEnd}
+                    width="1800"
+                    height="700"
                     preload="auto"
                     autoPlay={true}
                     muted="muted"
                     playsInline=""
                     style={{
-                      visibility: "visible",
                       width: 1536,
-                      height: 864,
+                      height: 860,
                       opacity: 1,
                     }}
                   >
@@ -91,150 +102,151 @@ const Body = () => {
                   </video>
                 </NectarVideoInner>
               </NectarVideoWrapper> */}
-              <div
-                className="dark_left"
-                style={{
-                  minHeight: "100vh",
-                }}
-              >
-                <div className="column_container">
-                  <div className="vc_column_inner">
-                    <div className="wpb_wrapper">
-                      <div id="fws_642d17609587c" className="wpb_row">
-                        <div className="row_bg_wrap">
-                          <div className="row_bg"></div>
-                        </div>
-                        <div className="row_col_wrap_left">
-                          <div className="extra_padding">
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper"></div>
-                            </div>
+              {isShow ? (
+                <div
+                  className={"dark_left " + fadeIn}
+                  style={{
+                    minHeight: "100vh",
+                  }}
+                >
+                  <div className="column_container">
+                    <div className="vc_column_inner">
+                      <div className="wpb_wrapper">
+                        <div id="fws_642d17609587c" className="wpb_row">
+                          <div className="row_bg_wrap">
+                            <div className="row_bg"></div>
                           </div>
+                          <div className="row_col_wrap_left">
+                            <div className="extra_padding">
+                              <div className="vc_column_inner">
+                                <div className="wpb_wrapper"></div>
+                              </div>
+                            </div>
 
-                          <div
-                            className="vc_column_container"
-                            style={{
-                              opacity: 1,
-                              transform: "none",
-                            }}
-                          >
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper">
-                                <h1
-                                  style={{
-                                    fontSize: 52,
-                                    textAlign: "center",
-                                  }}
-                                  className="vc_custom_heading"
-                                >
-                                  No.1
-                                  <br />
-                                  Money Transfer Company in South Korea
-                                </h1>
+                            <div
+                              className="vc_column_container"
+                              style={{
+                                opacity: 1,
+                                transform: "none",
+                              }}
+                            >
+                              <div className="vc_column_inner">
+                                <div className="wpb_wrapper">
+                                  <h1
+                                    style={{
+                                      fontSize: 52,
+                                      textAlign: "center",
+                                    }}
+                                    className="vc_custom_heading"
+                                  >
+                                    No.1
+                                    <br />
+                                    Money Transfer Company in South Korea
+                                  </h1>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="extra_padding">
+                              <div className="vc_column_inner">
+                                <div className="wpb_wrapper"></div>
                               </div>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="extra_padding">
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper"></div>
+                        <div id="fws_642d176097971" className="wpb_row">
+                          <div className="row_bg_wrap">
+                            <div className="row_bg"></div>
+                          </div>
+                          <div className="row_col_wrap_left">
+                            <div className="vc_col_sm_3">
+                              <div className="vc_column_inner">
+                                <div className="wpb_wrapper"></div>
+                              </div>
+                            </div>
+
+                            <div
+                              className="vc_col_sm_6"
+                              style={{
+                                opacity: 1,
+                                transform: "none",
+                              }}
+                            >
+                              <div className="vc_column_inner_check">
+                                <div className="wpb_wrapper">
+                                  <h5
+                                    style={{
+                                      fontSize: 20,
+                                      lineHeight: 1.25,
+                                      textAlign: "center",
+                                    }}
+                                    className="vc_custom_heading"
+                                  >
+                                    Check the
+                                  </h5>
+                                  <h3
+                                    style={{
+                                      fontSize: 35,
+                                      color: "#ed1c24",
+                                      lineHeight: 1.25,
+                                      textAlign: "center",
+                                    }}
+                                    className="vc_custom_heading"
+                                  >
+                                    <a href="https://online.gmeremit.com/">
+                                      EXCHANGE RATE
+                                    </a>
+                                  </h3>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="vc_col_sm_3">
+                              <div className="vc_column_inner">
+                                <div className="wpb_wrapper"></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div id="fws_642d176097971" className="wpb_row">
-                        <div className="row_bg_wrap">
-                          <div className="row_bg"></div>
-                        </div>
-                        <div className="row_col_wrap_left">
-                          <div className="extra_padding">
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper"></div>
-                            </div>
+                        <div id="fws_642d176099020" className="wpb_row">
+                          <div className="row_bg_wrap">
+                            <div className="row_bg"></div>
                           </div>
-
-                          <div
-                            className="vc_col-sm-6 wpb_column column_container vc_column_container col child_column boxed has-animation no-extra-padding inherit_tablet inherit_phone triggered-animation animated-in"
-                            style={{
-                              opacity: 1,
-                              transform: "none",
-                            }}
-                          >
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper">
-                                <h5
-                                  style={{
-                                    fontSize: 20,
-                                    lineHeight: 1.25,
-                                    textAlign: "center",
-                                  }}
-                                  className="vc_custom_heading"
-                                >
-                                  Check the
-                                </h5>
-                                <h3
-                                  style={{
-                                    fontSize: 32,
-                                    color: "#ed1c24",
-                                    lineHeight: 1.25,
-                                    textAlign: "center",
-                                  }}
-                                  className="vc_custom_heading"
-                                >
-                                  <a href="https://online.gmeremit.com/">
-                                    EXCHANGE RATE
+                          <div className="row_col_wrap_left">
+                            <div
+                              className="vc_col_sm_12"
+                              style={{
+                                opacity: 1,
+                                transform: "none",
+                              }}
+                            >
+                              <div className="vc_column_inner_right">
+                                <div className="wpb_wrapper">
+                                  <a
+                                    className="register_button"
+                                    style={{
+                                      marginRight: 15,
+                                      marginLeft: 15,
+                                      visibility: "visible",
+                                    }}
+                                    href="https://online.gmeremit.com/register"
+                                  >
+                                    <span>Register</span>
                                   </a>
-                                </h3>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="vc_col-sm-3 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div id="fws_642d176099020">
-                        <div className="row-bg-wrap">
-                          <div className="row-bg"></div>
-                        </div>
-                        <div className="row_col_wrap_12_inner col span_12  left">
-                          <div
-                            className="vc_col-sm-12 wpb_column column_container vc_column_container col child_column centered-text has-animation no-extra-padding inherit_tablet inherit_phone triggered-animation animated-in"
-                            style={{
-                              opacity: 1,
-                              transform: "none",
-                            }}
-                          >
-                            <div className="vc_column_inner">
-                              <div className="wpb_wrapper">
-                                <a
-                                  className="nectar-button large regular accent-color  regular-button primary-button"
-                                  style={{
-                                    marginRight: 15,
-                                    marginLeft: 15,
-                                    visibility: "visible",
-                                  }}
-                                  href="https://online.gmeremit.com/register"
-                                >
-                                  <span>Register</span>
-                                </a>
-                                <a
-                                  className="nectar-button large see-through-2  secondary-button"
-                                  style={{
-                                    marginRight: 15,
-                                    marginLeft: 15,
-                                    visibility: "visible",
-                                    color: "rgb(0,0,0)",
-                                    borderColor: "rgba(0, 0, 0, 0.75)",
-                                  }}
-                                  href="https://online.gmeremit.com/Login"
-                                >
-                                  <span>Login</span>
-                                </a>
+                                  <a
+                                    className="login_button"
+                                    style={{
+                                      marginRight: 15,
+                                      marginLeft: 15,
+                                      visibility: "visible",
+                                    }}
+                                    href="https://online.gmeremit.com/Login"
+                                  >
+                                    <span>Login</span>
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -243,7 +255,8 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              ) : null}
+
               {/* <DarkLeftWrapper>
                 <ExtraPadding>
                   <VcColumnInner>
@@ -277,6 +290,109 @@ const Body = () => {
                   </VcColumnInner>
                 </ExtraPadding>
               </DarkLeftWrapper> */}
+            </div>
+            <div
+              id="fws_642e6df0e239c"
+              data-column-margin="default"
+              data-midnight="dark"
+              className="wpb_row vc_row-fluid vc_row"
+              style={{
+                paddingTop: 0,
+                paddingBottom: 0,
+              }}
+            >
+              <div className="row_bg_wrap">
+                <div className="inner_wrap">
+                  <div className="row_bg"></div>
+                </div>
+              </div>
+              <div className="row_col_wrap_12 col span_12 dark left">
+                <div className="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone ">
+                  <div className="vc_column_inner">
+                    <div className="wpb_wrapper">
+                      <div className="divider_wrap" data-alignment="default">
+                        <div
+                          style={{
+                            height: 90,
+                          }}
+                          className="divider"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="fws_642e6df0e3820"
+              style={{
+                paddingTop: 0,
+                paddingBottom: 0,
+              }}
+              className="wpb_row_send_money"
+            >
+              <div className="row_bg_wrap">
+                <div className="inner_wrap">
+                  <div className="row_bg"></div>
+                </div>
+              </div>
+              <div className="row_col_wrap_12 col span_12 dark left">
+                <div className="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone ">
+                  <div className="vc_column_inner">
+                    <div className="wpb_wrapper">
+                      <div
+                        id="fws_642e6df0e44fe"
+                        className="wpb_row vc_row-fluid vc_row inner_row  "
+                      >
+                        <div className="row_bg_wrap">
+                          <div className="row_bg"></div>
+                        </div>
+                        <div className="row_col_wrap_12_inner col span_12  left">
+                          <div className="vc_col-sm-12 min-height wpb_column column_container vc_column_container col child_column padding-3-percent inherit_tablet inherit_phone ">
+                            <div className="vc_column_inner">
+                              <div className="column-image-bg-wrap">
+                                <div className="inner_wrap">
+                                  <div
+                                    className="column-image-bg loaded"
+                                    style={{
+                                      backgroundImage: `url("https://www.gmeremit.com/wp-content/uploads/2023/02/phone-with-hand-copy.jpg")`,
+                                    }}
+                                  ></div>
+                                </div>
+                              </div>
+                              <div className="wpb_wrapper">
+                                <h1
+                                  style={{
+                                    textAlign: "left",
+                                  }}
+                                  className="vc_custom_heading"
+                                >
+                                  Easy &amp; Secure
+                                </h1>
+                                <div className="wpb_text_column wpb_content_element  vc_custom_1630263395226">
+                                  <div className="wpb_wrapper">
+                                    <p></p>
+                                  </div>
+                                </div>
+
+                                <a
+                                  className="nectar-button large regular accent-color  regular-button"
+                                  style={{
+                                    visibility: "visible",
+                                  }}
+                                  href="#"
+                                >
+                                  <span>Send money</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
