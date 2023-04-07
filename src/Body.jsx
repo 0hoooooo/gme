@@ -291,11 +291,12 @@ const Body = () => {
                 </ExtraPadding>
               </DarkLeftWrapper> */}
             </div>
+
             <div
               id="fws_642e6df0e239c"
               data-column-margin="default"
               data-midnight="dark"
-              className="wpb_row vc_row-fluid vc_row"
+              className="send_money_wrapper"
               style={{
                 paddingTop: 0,
                 paddingBottom: 0,
@@ -306,8 +307,8 @@ const Body = () => {
                   <div className="row_bg"></div>
                 </div>
               </div>
-              <div className="row_col_wrap_12 col span_12 dark left">
-                <div className="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone ">
+              <div className="divder_left">
+                <div className="diver_left_extra_padding">
                   <div className="vc_column_inner">
                     <div className="wpb_wrapper">
                       <div className="divider_wrap" data-alignment="default">
@@ -336,52 +337,36 @@ const Body = () => {
                   <div className="row_bg"></div>
                 </div>
               </div>
-              <div className="row_col_wrap_12 col span_12 dark left">
-                <div className="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone ">
-                  <div className="vc_column_inner">
-                    <div className="wpb_wrapper">
-                      <div
-                        id="fws_642e6df0e44fe"
-                        className="wpb_row vc_row-fluid vc_row inner_row  "
-                      >
-                        <div className="row_bg_wrap">
+              <div className="dark_left_send">
+                <div className="extra_padding_send">
+                  <div className="vc_column_inner_send">
+                    <div className="wpb_wrapper_send">
+                      <div id="fws_642e6df0e44fe" className="inner_row_send">
+                        <div className="row_bg_wrap_send">
                           <div className="row_bg"></div>
                         </div>
-                        <div className="row_col_wrap_12_inner col span_12  left">
-                          <div className="vc_col-sm-12 min-height wpb_column column_container vc_column_container col child_column padding-3-percent inherit_tablet inherit_phone ">
-                            <div className="vc_column_inner">
-                              <div className="column-image-bg-wrap">
+                        <div className="row_inner_left">
+                          <div className="extra_padding_content">
+                            <div className="vc_column_inner_content">
+                              <div className="column_image_wrap">
                                 <div className="inner_wrap">
-                                  <div
-                                    className="column-image-bg loaded"
-                                    style={{
-                                      backgroundImage: `url("https://www.gmeremit.com/wp-content/uploads/2023/02/phone-with-hand-copy.jpg")`,
-                                    }}
-                                  ></div>
+                                  <div className="column_image_bg_loaded"></div>
                                 </div>
                               </div>
                               <div className="wpb_wrapper">
-                                <h1
-                                  style={{
-                                    textAlign: "left",
-                                  }}
-                                  className="vc_custom_heading"
-                                >
+                                <h1 className="vc_custom_heading">
                                   Easy &amp; Secure
                                 </h1>
-                                <div className="wpb_text_column wpb_content_element  vc_custom_1630263395226">
+                                <div className="content_element">
                                   <div className="wpb_wrapper">
-                                    <p></p>
+                                    <p>
+                                      All-in-one mobile app.
+                                      <br />
+                                      Government grade security.
+                                    </p>
                                   </div>
                                 </div>
-
-                                <a
-                                  className="nectar-button large regular accent-color  regular-button"
-                                  style={{
-                                    visibility: "visible",
-                                  }}
-                                  href="#"
-                                >
+                                <a className="send_money_button" href="#">
                                   <span>Send money</span>
                                 </a>
                               </div>
@@ -389,6 +374,38 @@ const Body = () => {
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="fws_642fd49478e7c" className="wpb_row_send_money">
+              <div className="row_bg_wrap">
+                <div className="inner_wrap">
+                  <div className=" "></div>
+                </div>
+              </div>
+              <div className="row_col_wrap_12 col span_12 dark left">
+                <div className="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone ">
+                  <div className="vc_column-inner">
+                    <div className="wpb_wrapper">
+                      <div className="divider-wrap height_tablet_60px ">
+                        <div
+                          style={{
+                            height: 90,
+                          }}
+                          className="divider"
+                        ></div>
+                      </div>
+                      <h1
+                        style={{
+                          fontSize: 52,
+                          textAlign: "center",
+                        }}
+                        className="vc_custom_heading"
+                      >
+                        Send money with
+                      </h1>
                     </div>
                   </div>
                 </div>

@@ -6,8 +6,31 @@ import styled from "styled-components";
 import "./Header.css";
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", updateScroll);
+  });
+  useEffect(() => {
+    console.log(scrollPosition);
+  });
+
+  // useEffect(() => {
+  //   const headerTag = document.querySelector("header_outer");
+  //   document.addEventListener("scroll", function () {
+  //     const pixels = window.scrollY;
+  //     if (pixels >= headerTag.getBoundingClientRect().height) {
+  //       headerTag.classList.add("scrolled");
+  //     } else {
+  //       headerTag.classList.remove("scrolled");
+  //     }
+  //   });
+  // });
+
   return (
-    <div id="header-outer">
+    <div id={scrollPosition < 100 ? "header_outer" : "header_outer_scrolled"}>
       <header id="top">
         <div className="container">
           <div className="row">

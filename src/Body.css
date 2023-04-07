@@ -5,7 +5,15 @@
   flex-direction: column;
   flex-grow: 1;
 }
-
+.container-wrap {
+  padding-bottom: 0px;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  /* flex-grow: 1; */
+  background-color: #fafbfc;
+  position: relative;
+  z-index: 10;
+}
 .container-main-content {
   margin: 0 auto;
   position: relative;
@@ -15,6 +23,12 @@
     max-width: 1100px;
   }
 }
+/* .container-main-content-row {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+} */
+
 .main-content > .row,
 header .row {
   margin-left: 0px;
@@ -115,19 +129,19 @@ header .row {
 .wpb_wrapper {
   min-height: 1px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .wpb_wrapper > div {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   position: relative;
 }
 .row_bg_wrap {
-  margin-left: 0;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .row_bg {
   position: absolute;
@@ -221,6 +235,11 @@ header .row {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
+.vc_custom_heading {
+  margin-bottom: 7px;
+  font-weight: 600;
+  line-height: 1.25 !important;
+}
 .vc_custom_heading a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -303,7 +322,7 @@ a {
   background-color: #fe6274 !important;
 }
 .wpb_row {
-  margin-bottom: 0;
+  margin-bottom: -50px;
   position: relative;
 }
 .vc_column_inner_right {
@@ -351,10 +370,207 @@ a {
   position: relative;
   margin-bottom: 35px;
 }
-.row_bg_wrap {
+.row_bg_wrap_send {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+}
+.inner_wrap {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.dark_left_send {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+}
+.extra_padding_send {
+  margin-left: 0;
+  margin-bottom: 0;
+  float: none;
+  margin-right: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.vc_column_inner_send {
+  position: relative;
+}
+.column_image_wrapper_send {
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.inner_wrap_send {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.inner_row_send {
+  margin-bottom: 0;
+  position: relative;
+}
+@media (min-width: 690px) {
+  .extra_padding_send {
+    width: 100%;
+  }
+}
+.row_inner_left {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+}
+.extra_padding_content {
+  display: block;
+  position: relative;
+  margin-left: 0;
+  margin-bottom: 0;
+  float: none;
+  margin-right: 0;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 690px) {
+  .extra_padding_content {
+    width: 100%;
+  }
+}
+.vc_column_inner_content {
+  border-radius: 15px;
+  padding: calc(1245px * 0.03);
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.column_image_wrap {
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.column_image_bg_loaded {
+  border-radius: 15px;
+  background-position: right top;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2023/02/phone-with-hand-copy.jpg");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out !important;
+}
+@media screen and (min-width: 1024px) {
+  .column_image_bg_loaded {
+    background-position-y: -60px !important;
+  }
+}
+
+.column_image_bg_loaded:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.send_money_wrapper {
+  position: relative;
+  margin-bottom: -50px;
+}
+.divder_left {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.diver_left_extra_padding {
+  background-position: center;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 690px) {
+  .diver_left_extra_padding {
+    width: 100%;
+  }
+}
+.wpb_wrapper_send {
+  margin-bottom: 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .column_image_wrap + .wpb_wrapper {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+}
+.content_element {
+  margin-bottom: 30px !important;
+}
+.send_money_button {
+  visibility: visible;
+  background-color: #ed1c24 !important;
+  padding: 10px 20px;
+  font-size: 16px !important;
+  font-family: Poppins;
+  text-transform: none !important;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: 0;
+  margin-bottom: 10px;
+  opacity: 1;
+  line-height: 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.send_money_button span {
+  left: 0;
+  display: inline-block;
+  transform: translateX(0);
+  position: relative;
+  color: #fff;
+}
+.send_money_button:hover {
+  background-color: #fe6274 !important;
+}
+
+.wpb_row_feature {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  margin-bottom: 35px;
 }
