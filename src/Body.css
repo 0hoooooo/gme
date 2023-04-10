@@ -128,7 +128,7 @@ header .row {
 }
 .wpb_wrapper {
   min-height: 1px;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   z-index: 2;
 }
@@ -369,6 +369,8 @@ a {
 .wpb_row_send_money {
   position: relative;
   margin-bottom: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .row_bg_wrap_send {
   width: 100%;
@@ -397,12 +399,13 @@ a {
 }
 .extra_padding_send {
   margin-left: 0;
+  margin-right: 0;
   margin-bottom: 0;
   float: none;
-  margin-right: 0;
   background-size: cover;
   background-position: center;
   position: relative;
+  display: block;
 }
 .vc_column_inner_send {
   position: relative;
@@ -573,4 +576,240 @@ a {
   padding-bottom: 0px;
   position: relative;
   margin-bottom: 35px;
+}
+.divider_wrap {
+  margin-bottom: 0;
+}
+.send_money_with_wrapper {
+  position: relative;
+  margin-bottom: 35px;
+}
+.main3_dark_left {
+  color: #191c1f;
+  display: flex;
+  align-content: center;
+  float: none;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+  float: none;
+}
+.main3_vc_column_container {
+  display: flex;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-position: center;
+  position: relative;
+  align-items: stretch;
+}
+@media (min-width: 690px) {
+  .main3_vc_column_container {
+    width: 50%;
+  }
+}
+.vc_column_inner {
+  position: relative;
+}
+.main3_vc_column_inner {
+  -webkit-box-flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: flex;
+  flex-grow: 1;
+
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.main3_wpb_wrapper {
+  min-height: 1px;
+}
+.main3_wpb_wrapper > div {
+  position: relative;
+}
+.main3_row_bg_wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fastet_dark_left {
+  display: flex;
+  position: relative;
+  width: auto;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+}
+.fastet_padding {
+  position: relative;
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  padding-right: 3%;
+}
+@media (min-width: 690px) {
+  .fastet_padding {
+    width: 100%;
+  }
+}
+.fastest_vc_column_inner {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1420px) {
+  .fastest_vc_column_inner {
+    padding: calc(1245px * 0.01);
+  }
+}
+.fastest_column_image_bg_loaded {
+  border-radius: 15px;
+  background-position: right center;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/message-sent.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out !important;
+}
+.fastest_column_image_bg_loaded:hover {
+  /* -webkit-transform: scale(1.1); */
+  transform: scale(1.1);
+}
+
+h4 {
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.main3_divider_wrap {
+  margin-bottom: 0;
+}
+.main3_wpb_wrapper {
+  position: relative;
+  z-index: 2;
+}
+.cheapest_padding {
+  position: relative;
+  display: block;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  padding-right: 2%;
+}
+@media (min-width: 690px) {
+  .cheapest_padding {
+    width: 100%;
+  }
+}
+.cheapest_column_image_bg_loaded {
+  border-radius: 15px;
+  background-position: left center;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/10/cheapest.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out !important;
+}
+.cheapest_column_image_bg_loaded:hover {
+  /* -webkit-transform: scale(1.1); */
+  transform: scale(1.1);
+}
+.cheapest_text {
+  display: block !important;
+  margin-left: auto;
+}
+.confidence_column_container {
+  display: flex;
+  position: relative;
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  align-items: stretch;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 690px) {
+  .confidence_column_container {
+    width: 50%;
+  }
+}
+.confidence_column_inner {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  min-height: 450px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1000px) {
+  .confidence_column_inner {
+    padding: calc(1250px * 0.03);
+  }
+}
+.confidence_column_inner > div {
+  margin-bottom: 20px;
+}
+.confidence_column_image_bg_loaded {
+  border-radius: 15px;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2023/03/gmeapp-scaled.jpg");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-color: #ffd059;
+  transition: all 0.2s ease-in-out !important;
+}
+@media only screen and (min-width: 1024px) {
+  .confidence_column_image_bg_loaded {
+    background-position-x: -115px !important;
+    background-position-y: -115px !important;
+  }
+}
+.confidence_column_image_bg_loaded:hover {
+  /* -webkit-transform: scale(1.1); */
+  transform: scale(1.1);
+}
+.confidence_wpb_wrapper {
+  min-height: 1px;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  z-index: 2;
 }
