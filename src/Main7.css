@@ -1,0 +1,84 @@
+.main7_wbp_row {
+  position: relative;
+  margin-bottom: 35px;
+}
+.main7_dark_left {
+  display: flex;
+  position: relative;
+  width: auto;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  margin-left: -1%;
+  margin-right: -1%;
+}
+.main7_wpb_wrapper {
+  position: relative;
+  z-index: 2;
+}
+.main7_extra_padding {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: none;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .main7_extra_padding {
+    width: 50%;
+  }
+}
+.main7_vc_column_inner {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1420px) {
+  .main7_vc_column_inner {
+    padding: calc(1245px * 0.02);
+  }
+}
+.main7_item1_image_upload {
+  border-radius: 15px;
+  background-position: left center;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/12-Branches.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out !important;
+}
+.main7_item1_image_upload:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.main7_vc_custom_heading {
+  letter-spacing: 0;
+}
+
+.main7_item2_image_upload {
+  border-radius: 15px;
+  background-position: right center;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/world-map.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out !important;
+}
+.main7_item2_image_upload:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

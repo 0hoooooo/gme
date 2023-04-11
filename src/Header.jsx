@@ -92,12 +92,18 @@ const Header = () => {
               <MenuNav>
                 <MenuUl>
                   <MenuLi>
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+                    <MenuA
+                      href="https://www.gmeremit.com/contact-us/#help"
+                      aria-current="page"
+                    >
                       <span className="menu-title-text">Help</span>
                     </MenuA>
                   </MenuLi>
                   <MenuLi>
-                    <MenuA href="https://www.gmeremit.com/" aria-current="page">
+                    <MenuA
+                      href="https://online.gmeremit.com/Login"
+                      aria-current="page"
+                    >
                       <span className="menu-title-text">Login</span>
                     </MenuA>
                   </MenuLi>

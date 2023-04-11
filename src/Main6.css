@@ -1,0 +1,61 @@
+.main6_wbp_row {
+  position: relative;
+  margin-bottom: 35px;
+}
+.main6_dark_left {
+  display: flex;
+  position: relative;
+  width: auto;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+}
+.main6_extra_padding {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: none;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media only screen and (min-width: 690px) {
+  .main6_extra_padding {
+    width: 100%;
+  }
+}
+.main6_vc_column_inner {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1420px) {
+  .main6_vc_column_inner {
+    padding: calc(1245px * 0.03);
+  }
+}
+.main6_image_upload {
+  border-radius: 15px;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/08/200k-customers.png");
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-position-y: -70px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+.main6_image_upload:hover {
+  -webkit-transform: scale(1.1);
+  /* transition: transform 0.5s; */
+  transform: scale(1.1);
+}
+.main6_wpb_wrapper {
+  position: relative;
+  z-index: 2;
+}

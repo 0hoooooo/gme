@@ -1,0 +1,93 @@
+body .full-width {
+  visibility: visible;
+}
+.full_width {
+  margin-bottom: 0;
+  visibility: visible;
+  box-sizing: content-box;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+.full-width .row_bg_wrap {
+  --scroll-bar-w: 13px;
+  margin-left: calc(-50vw + var(--scroll-bar-w) / 2);
+  left: 50%;
+  width: 100vw;
+  width: calc(100vw - var(--scroll-bar-w));
+}
+.inner_wrap_using_image {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.row_bg_using_image_loaded {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: opacity 0.4s ease 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://www.gmeremit.com/wp-content/uploads/2021/07/background.png");
+}
+.main4_dark_left {
+  color: #191c1f;
+  float: none;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  z-index: 10;
+}
+.main4_extra_padding {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: none;
+  padding-bottom: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-position: center;
+  position: relative;
+  visibility: visible;
+}
+@media only screen and (min-width: 690px) {
+  .main4_extra_padding {
+    width: 100%;
+  }
+}
+.main4_column_inner {
+  position: relative;
+  color: #191c1f;
+  visibility: visible;
+  border-radius: 15px;
+}
+.main4_wpb_wrapper {
+  visibility: visible;
+}
+.main4_divider {
+  margin-bottom: 0;
+}
+.main4_text_content {
+  margin-bottom: 0;
+}
+.main4_divider_wrapper {
+  margin-bottom: 0;
+  color: #191c1f;
+}
+.main5_wbp_row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  margin-bottom: 35px;
+}

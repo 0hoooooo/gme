@@ -257,11 +257,23 @@ header .row {
   text-decoration: inherit;
   color: inherit;
 }
+h1 {
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 600;
+}
 h5 {
   margin-bottom: 7px;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   line-height: 1.25 !important;
+}
+h6 {
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
 }
 h3 {
   font-family: Poppins;
