@@ -1,5 +1,5 @@
-import "./Body.css";
-import "./Main5.css";
+import ".././Body.css";
+import ".././Main5.css";
 
 const Main5 = () => {
   return (

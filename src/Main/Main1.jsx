@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Body.css";
+import ".././Body.css";
 const Main1 = () => {
   const [isShow, setIsShow] = useState(false);
   const [fadeIn, setFadeIn] = useState("");

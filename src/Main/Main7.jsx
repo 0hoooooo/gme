@@ -1,12 +1,12 @@
-import "./Body.css";
-import "./Main7.css";
+import ".././Body.css";
+import ".././Main7.css";
 
 const Main7 = () => {
   return (
     <>
       <div
         id="fws_6434ea6e58ea8"
-        className="main7_wbp_row"
+        className="main8_wbp_row"
         style={{ paddingTop: 0, paddingBottom: 0 }}
       >
         <div className="row_bg_wrap">
