@@ -53,8 +53,8 @@ const Footer = () => {
                                 className="divider_border"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_personl_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
                                   <span style={{ color: "#808080" }}>
                                     <a
@@ -109,11 +109,11 @@ const Footer = () => {
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                      <div className="footer_business">
+                        <div className="footer_business_vc_column_inner">
+                          <div className="footer_business_wpb_wrapper">
+                            <div className="footer_business_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper">
                                 <h5>
                                   <strong>Business</strong>
                                 </h5>
@@ -127,11 +127,11 @@ const Footer = () => {
                                   height: 1,
                                   marginBottom: 5,
                                 }}
-                                className="divider-border"
+                                className="divider_border"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_business_content_element">
+                              <div className="footer_business_content_element_wpb_wrapper">
                                 <p>
                                   <span style={{ color: "#808080" }}>
                                     <strong>
@@ -141,7 +141,7 @@ const Footer = () => {
                                         href="https://www.gmeremit.com/business/#solutions"
                                       >
                                         <span className="menu-title-text">
-                                          Solutions
+                                          <strong>Solutions</strong>
                                         </span>
                                       </a>
                                     </strong>
@@ -226,8 +226,8 @@ const Footer = () => {
                                 className="divider"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_business_content_element">
+                              <div className="footer_business_content_element_wpb_wrapper">
                                 <p>
                                   <span style={{ color: "#808080" }}>
                                     <a
@@ -275,11 +275,11 @@ const Footer = () => {
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper"></div>
+                      <div className="footer_business">
+                        <div className="footer_business_vc_column_inner">
+                          <div className="footer_business_wpb_wrapper">
+                            <div className="footer_business_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper"></div>
                             </div>
 
                             <div className="divider-wrap">
@@ -295,11 +295,12 @@ const Footer = () => {
                                   height: 1,
                                   marginBottom: 5,
                                 }}
-                                className="divider-border"
+                                className="divider_border"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+
+                            <div className="footer_business_content_element">
+                              <div className="footer_business_content_element_wpb_wrapper">
                                 <p>
                                   <span style={{ color: "#808080" }}>
                                     <a
@@ -363,7 +364,8 @@ const Footer = () => {
                                     >
                                       <span className="nectar-menu-icon-text">
                                         <span className="menu-title-text">
-                                          Multiple payment methods
+                                          Multiple payment <br />
+                                          methods
                                         </span>
                                       </span>
                                     </a>
@@ -389,15 +391,15 @@ const Footer = () => {
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper"></div>
+                      <div className="footer_company">
+                        <div className="footer_company_vc_column_inner">
+                          <div className="footer_company_wpb_wrapper">
+                            <div className="footer_company_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper"></div>
                             </div>
 
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_company_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper">
                                 <h5>
                                   <span style={{ color: "#333333" }}>
                                     <strong>Company</strong>
@@ -413,11 +415,11 @@ const Footer = () => {
                                   height: 1,
                                   marginBottom: 5,
                                 }}
-                                className="divider-border"
+                                className="divider_border"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_company_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
                                   <strong>
                                     <span style={{ color: "#808080" }}>
@@ -427,7 +429,7 @@ const Footer = () => {
                                         href="https://www.gmeremit.com/about-us/"
                                       >
                                         <span className="menu-title-text">
-                                          About Us
+                                          <strong>About Us</strong>
                                         </span>
                                       </a>
                                     </span>
@@ -484,8 +486,8 @@ const Footer = () => {
                                 className="divider"
                               ></div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
+                            <div className="footer_company_content_element">
+                              <div className="footer_personal_content_element_wpb_wrapper">
                                 <p>
                                   <strong>
                                     <span style={{ color: "#808080" }}>
@@ -495,7 +497,7 @@ const Footer = () => {
                                         href="https://www.gmeremitblog.com/"
                                       >
                                         <span className="menu-title-text">
-                                          Blog
+                                          <strong>Blog</strong>
                                         </span>
                                       </a>
                                     </span>
@@ -549,9 +551,9 @@ const Footer = () => {
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
+                      <div className="footer_company">
+                        <div className="footer_company_vc_column_inner">
+                          <div className="footer_company_wpb_wrapper">
                             <div
                               className="divider-wrap"
                               data-alignment="default"
@@ -568,7 +570,7 @@ const Footer = () => {
                                   height: 1,
                                   marginBottom: 5,
                                 }}
-                                className="divider-border"
+                                className="divider_border"
                               ></div>
                             </div>
                             <div className="wpb_text_column wpb_content_element ">
@@ -583,7 +585,7 @@ const Footer = () => {
                                         aria-current="page"
                                       >
                                         <span className="menu-title-text">
-                                          Careers
+                                          <strong>Careers</strong>
                                         </span>
                                       </a>
                                     </span>
@@ -648,7 +650,7 @@ const Footer = () => {
                                         href="https://www.gmeremit.com/contact-us/"
                                       >
                                         <span className="menu-title-text">
-                                          Contact Us
+                                          <strong>Contact Us</strong>
                                         </span>
                                       </a>
                                     </span>
@@ -689,40 +691,36 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                  <div
-                    id="fws_6436460ea1566"
-                    className="wpb_row vc_row-fluid vc_row inner_row  "
-                  >
-                    <div className="row-bg-wrap">
+                  <div id="fws_6436460ea1566" className="footer_info_row">
+                    <div className="row_bg_wrap">
                       <div className="row-bg"></div>
                     </div>
-                    <div className="row_col_wrap_12_inner col span_12  left">
-                      <div className="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="img-with-aniamtion-wrap center custom-width-200px">
-                              <div className="inner">
+                    <div className="footer_info_dark_left">
+                      <div className="footer_info_padding">
+                        <div className="footer_info_vc_column_inner">
+                          <div className="footer_info_wpb_wrapper">
+                            <div className="footer_info_image_wrapper">
+                              <div className="footer_info_inner">
                                 <div
-                                  className="hover-wrap"
+                                  className="footer_info_hover_wrap"
                                   style={{ opacity: 1 }}
                                 >
                                   <div className="hover-wrap-inner img-loaded">
                                     <img
-                                      className="img-with-animation skip-lazy nectar-lazy loaded animated-in"
+                                      className="footer_info_image_upload"
                                       data-delay="0"
                                       height="288"
                                       width="946"
                                       data-animation="fade-in"
-                                      src="https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1.png"
                                       alt=""
                                       sizes="(min-width: 1450px) 75vw, (min-width: 1000px) 85vw, 100vw"
-                                      srcset="https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1.png 946w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1-300x91.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1-768x234.png 768w"
+                                      srcSet="https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1.png 946w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1-300x91.png 300w, https://www.gmeremit.com/wp-content/uploads/2023/01/GME-Remittance_logo-1-768x234.png 768w"
                                     />
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="wpb_text_column wpb_content_element ">
+                            <div className="footer_company_content_element">
                               <div className="wpb_wrapper">
                                 <p style={{ textAlign: "center" }}>
                                   <span style={{ color: "#808080" }}>
