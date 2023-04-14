@@ -119,6 +119,7 @@ const Main5 = () => {
                           <a
                             className="help_button"
                             style={{
+                              marginLeft: 330,
                               marginTop: 50,
                               borderColor: "rgba(0, 0, 0, 0.75)",
                               color: "rgb(0, 0, 0)",

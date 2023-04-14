@@ -1,7 +1,7 @@
-import "./Footer.css";
-import "./Body.css";
-
-const Footer = () => {
+import ".././Footer1.css";
+import ".././Body.css";
+import { BsLinkedin } from "react-icons/bs";
+const Footer1 = () => {
   return (
     <div className="footer_container">
       <div className="footer_container_row">
@@ -762,32 +762,35 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                  <div
-                    id="fws_6436460ea2bee"
-                    className="wpb_row vc_row-fluid vc_row inner_row  "
-                  >
-                    <div className="row-bg-wrap">
+                  <div id="fws_6436460ea2bee" className="linkedIn_row">
+                    <div className="row_bg_wrap">
                       <div className="row-bg"></div>
                     </div>
-                    <div className="row_col_wrap_12_inner col span_12  left">
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper"></div>
+                    <div className="linkedIn_left">
+                      <div className="linkedIn_column1_padding">
+                        <div className="linkedIn_column1_inner">
+                          <div className="linkedIn_column1_wpb_wrapper"></div>
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper"></div>
+                      <div className="linkedIn_column1_padding">
+                        <div className="linkedIn_column1_inner">
+                          <div className="linkedIn_column1_wpb_wrapper"></div>
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column centered-text no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div className="wpb_text_column wpb_content_element ">
-                              <div className="wpb_wrapper">
-                                <p style={{ textAlign: "center" }}>
+                      <div className="linkedIn_column1_padding">
+                        <div className="linkedIn_column1_inner">
+                          <div className="linkedIn_column1_wpb_wrapper">
+                            <div className="linkedIn_content_element">
+                              <div className="linkedIn_column1_wpb_wrapper">
+                                <p
+                                  style={{
+                                    textAlign: "center",
+                                    paddingBottom: 0,
+                                    marginBottom: 0,
+                                  }}
+                                >
                                   Follow us:
                                 </p>
                               </div>
@@ -796,30 +799,27 @@ const Footer = () => {
                             <div className="nectar_icon_wrap">
                               <div className="nectar_icon">
                                 <a href="https://www.linkedin.com/company/gmeremittance"></a>
-                                <i
+                                <BsLinkedin
                                   style={{
+                                    fill: "skyblue",
                                     fontSize: 50,
-                                    lineHeight: 50,
-                                    height: 50,
-                                    width: 50,
                                   }}
-                                  className="fa fa-linkedin-square"
-                                ></i>
+                                />
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper"></div>
+                      <div className="linkedIn_column1_padding">
+                        <div className="linkedIn_column1_inner">
+                          <div className="linkedIn_column1_wpb_wrapper"></div>
                         </div>
                       </div>
 
-                      <div className="vc_col-sm-1/5 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone ">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper"></div>
+                      <div className="linkedIn_column1_padding">
+                        <div className="linkedIn_column1_inner">
+                          <div className="linkedIn_column1_wpb_wrapper"></div>
                         </div>
                       </div>
                     </div>
@@ -833,4 +833,4 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;
+export default Footer1;

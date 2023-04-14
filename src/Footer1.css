@@ -202,3 +202,62 @@ a {
   max-width: 100%;
   height: auto;
 }
+.linkedIn_row {
+  margin-bottom: 0;
+  position: relative;
+}
+.linkedIn_left {
+  display: flex;
+  flex-wrap: wrap;
+  float: none;
+  margin-bottom: 0 !important;
+  z-index: 10;
+  width: auto;
+  position: relative;
+}
+.linkedIn_column1_padding {
+  display: block;
+  position: relative;
+  float: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-position: center;
+}
+@media (min-width: 690px) {
+  .linkedIn_column1_padding {
+    width: 20%;
+  }
+}
+.linkedIn_column1_inner {
+  position: relative;
+}
+.linkedIn_content_element {
+  display: block;
+  margin-bottom: 0;
+  text-align: center;
+}
+.nectar_icon_wrap {
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.nectar_icon {
+  padding: 20px;
+}
+.nectar_icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.nectar_icon svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 60px;
+}

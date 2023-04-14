@@ -66,26 +66,29 @@ const Main6 = () => {
                 </div>
               </div>
               <div className="main6_wpb_wrapper">
-                <h1
-                  style={{
-                    fontSize: 48,
-                    color: "#ffffff",
-                    textAlign: "left",
-                  }}
-                  className="vc_custom_heading"
-                >
-                  400,000+
-                </h1>
-                <p
-                  style={{
-                    fontSize: 24,
-                    color: "#ffffff",
-                    textAlign: "left",
-                  }}
-                  className="vc_custom_heading"
-                >
-                  Happy Customers
-                </p>
+                <div className="main6_wpb_wrapper_letter">
+                  <h1
+                    style={{
+                      fontSize: 48,
+                      color: "#ffffff",
+                      textAlign: "left",
+                    }}
+                    className="vc_custom_heading"
+                  >
+                    400,000+
+                  </h1>
+                  <p
+                    style={{
+                      fontSize: 24,
+                      color: "#ffffff",
+                      textAlign: "left",
+                    }}
+                    className="vc_custom_heading"
+                  >
+                    Happy Customers
+                  </p>
+                </div>
+
                 <div className="divider-wrap" data-alignment="default">
                   <div style={{ height: 240 }} className="divider"></div>
                 </div>
