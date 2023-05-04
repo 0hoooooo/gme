@@ -47,27 +47,25 @@ const Main1 = () => {
           hegiht: "100%",
         }}
       >
-        <div className="nectar-video-inner">
+        <div className="nectar-video-inner" style={{ width: "100vw" }}>
           <video
             className="nectar-video-bg"
             ref={videoRef}
             onEnded={handleVideoEnd}
-            width="1800"
+            width="100%"
             height="700"
             preload="auto"
             autoPlay={true}
             muted="muted"
             playsInline=""
             style={{
-              width: 1536,
+              width: "100%",
               height: 860,
               opacity: 1,
             }}
+            src="https://www.gmeremit.com/wp-content/uploads/2021/10/web-intro-logo-smaller.mp4"
           >
-            <source
-              src="https://www.gmeremit.com/wp-content/uploads/2021/10/web-intro-logo-smaller.mp4"
-              type="video/mp4"
-            />
+            <source type="video/mp4" />
           </video>
         </div>
       </div>

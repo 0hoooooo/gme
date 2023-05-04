@@ -10,22 +10,23 @@ import Footer2 from "./Footer/Footer2";
 import Footer3 from "./Footer/Footer3";
 
 const App = () => {
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(false);
   const api = async () => {
     try {
-      setLoading(false);
-    } catch (e) {
       setLoading(true);
+    } catch (e) {
+      setLoading(false);
     }
   };
   useEffect(() => {
-    setLoading(true);
-    api();
-  }, []);
+    setTimeout(() => {
+      api();
+    }, 1000);
+  }, [loading]);
 
   return (
     <div className="App">
-      {loading ? (
+      {loading === false ? (
         <Loading />
       ) : (
         <div

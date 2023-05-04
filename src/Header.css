@@ -144,8 +144,16 @@
   list-style: none outside none;
   vertical-align: middle;
   padding: 0;
+  margin: 0;
   z-index: 10;
   float: none;
+  overflow: visible;
+  transition: padding 0.8s ease, margin 0.25s ease;
+  min-height: 1px;
+  line-height: 1px;
+  list-style: none outside none;
+  padding: 0;
+  z-index: 10;
 }
 .sf-menu li {
   outline: 0 none;
@@ -192,6 +200,9 @@ li a:hover:after {
 }
 .sub_menu {
   display: none;
+}
+.menu_item2 {
+  display: inline-block;
 }
 .menu_item2:hover .sub_menu {
   border-radius: 20px;
